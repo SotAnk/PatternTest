@@ -22,7 +22,7 @@ public class AuthTest {
         $("[data-test-id=login] input").setValue(validUserInfo.getLogin());
         $("[data-test-id=password] input").setValue(validUserInfo.getPassword());
         $("button[data-test-id=action-login]").click();
-        $(".App_appContainer__3jRx1").shouldBe(visible).shouldHave(text("Личный кабинет"));
+        $("h2").shouldHave(text("Личный кабинет"));
     }
 
     @Test
